@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:summary="Settings"
+        android:title="Basic Information">
+        <EditTextPreference
+            android:key="firstName"
+            android:summary="Change your first name"
+            android:title="First name"/>
+        <EditTextPreference
+            android:key="lastName"
+            android:summary="Change your last name"
+            android:title="Last name"/>
+        <ListPreference android:title="Sex"
+            android:key="sex"
+            android:entries="@array/sex"
+            android:summary="Change your sex"
+            android:entryValues="@array/sex"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Settings"
+        android:title="Username and Password">
+        <EditTextPreference
+            android:key="usernameEditText"
+            android:summary="Change your username"
+            android:title="Username"/>
+        <EditTextPreference
+            android:key="passwordEditText"
+            android:summary="Change your password"
+            android:title="Password"/>
+    </PreferenceCategory>
+</PreferenceScreen>

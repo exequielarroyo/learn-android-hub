@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Group2SW5</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="group_members">
+        <item>Exequiel Arroyo</item>
+        <item>Ella Jane Espiritu</item>
+        <item>Mher Jazer Alabalate</item>
+        <item>Jomar Apalat</item>
+        <item>Michelle Arroyo</item>
+        <item>Zyra Marie Ramos</item>
+    </array>
+
+    <array name="group_emails">
+        <item>zekielarroyo@gmail.com</item>
+        <item>janeellaellajane@gmail.com</item>
+        <item>albalate.jazer@gmail.com</item>
+        <item>sanitizer1014@gmail.com</item>
+        <item>arroyomichelle54@gmail.com</item>
+        <item>zairiray13@gmail.com</item>
+    </array>
+
+    <array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+</resources>

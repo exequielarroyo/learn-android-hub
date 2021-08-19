@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/bottom_nav" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/showHideLottieView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLottieView"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLottieView"
+        app:layout_constraintStart_toStartOf="@+id/buttonLottieView"
+        app:layout_constraintTop_toTopOf="@+id/buttonLottieView"
+        app:lottie_rawRes="@raw/show_hide" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/buttonLottieView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/oval"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="#2029FF"
+        android:outlineSpotShadowColor="#2029FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/button" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval_bottom_nav"
+        android:paddingTop="10dp"
+        android:theme="@style/Theme.MaterialComponents.BottomSheetDialog"
+        app:backgroundTint="#24283E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
